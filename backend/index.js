@@ -1,6 +1,7 @@
 // importing express module
 const express = require('express');
 const userRouter = require('./routers/userRouter');
+const locationRouter = require('./routers/locationRouter');
 
 const cors = require('cors');
 
@@ -16,6 +17,7 @@ app.use(cors({
 
 // middleware
 app.use('/user', userRouter);
+app.use('/location', locationRouter);
 
 
 // route or endpoint
