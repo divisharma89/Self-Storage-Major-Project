@@ -1,6 +1,6 @@
 import React from 'react';
-import  useState  from 'react';
-import  {NavLink}  from 'react-router-dom';
+import {useState} from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
 
@@ -14,9 +14,9 @@ const Header = () => {
         {/* Container wrapper */}
         <div className="container-fluid">
           {/* Toggle button */}
-       )
-       
-  
+
+
+
           <button
             className="navbar-toggler"
             type="button"
@@ -39,7 +39,7 @@ const Header = () => {
                 loading="lazy"
               />
             </a>
-  
+
             {/* Left links */}
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
@@ -52,7 +52,7 @@ const Header = () => {
                   Login
                 </NavLink>
               </li>
-            
+
               <li className="nav-item">
                 <NavLink className="nav-link" to="/register">
                   Register
@@ -67,13 +67,13 @@ const Header = () => {
           <div className="d-flex align-items-center">
             {
               loggedin ?
-              <button className='btn btn-outline-danger' 
-              onClick={ e => { setLoggedin(false) } }>Logout</button>
-              :
-              <button className='btn btn-link' onClick={ e => { setLoggedin(true) } }>Login</button>
+                <button className='btn btn-outline-danger'
+                  onClick={e => { setLoggedin(false) }}>Logout</button>
+                :
+                <button className='btn btn-link' onClick={e => { setLoggedin(true) }}>Login</button>
             }
-          
-          
+
+
             {/* Icon */}
             <a className="text-reset me-3" href="#">
               <i className="fas fa-shopping-cart" />
@@ -122,7 +122,7 @@ const Header = () => {
                 className="dropdown-menu dropdown-menu-end"
                 aria-labelledby="navbarDropdownMenuAvatar"
               >
-                
+
               </ul>
             </div>
           </div>
@@ -134,7 +134,7 @@ const Header = () => {
     </>
 
   )
-  }
+}
 
 
 export default Header;
