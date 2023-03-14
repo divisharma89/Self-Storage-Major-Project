@@ -36,11 +36,8 @@ function App() {
           
           <Route element={<User />} path="user">
             <Route path="pofile" element={<UserProfile />} />
-          
+            
           </Route>
-
-          
-
         </Routes>
       </BrowserRouter>
     </div>
